@@ -1,3 +1,3 @@
-<ng-container *ngFor="let item to cards">
-  <app-custom-card [card]="item"></app-custom-card>
+<ng-container>
+  <app-custom-card *ngFor="let item of cards" [card]="item"></app-custom-card>
 </ng-container>
