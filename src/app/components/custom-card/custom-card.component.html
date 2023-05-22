@@ -1,0 +1,10 @@
+<div *ngIf="card; else noCard">
+  <img *ngIf="card.image" [src]="card.image" alt="Image">
+  <h1>{{ card.title || 'No title' }}</h1>
+  <p>{{ card.description || 'No description' }}</p>
+</div>
+
+
+<ng-template #noCard>
+  <p>Card not found</p>
+</ng-template>
